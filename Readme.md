@@ -169,6 +169,7 @@ Same root cause as above — valid year, unsupported segment, no safety gate cat
 - Add a topic/entity relevance check (e.g., extracting key nouns from the question and verifying their presence in retrieved evidence, similar in spirit to the existing year-check but generalized) to catch the valid-year/unsupported-topic hallucination gap.
 - Make the two safety gates independently implemented (not sharing one helper function) to restore true redundancy.
 - Evaluate a larger LLM to assess whether prompt-based refusal (Rule 4) becomes more reliable.
+- Expand the evaluation set and adopt a structured framework (e.g., RAGAS) for groundedness, context relevance, and completeness, not just recall and hallucination rate.
 
 ---
 
