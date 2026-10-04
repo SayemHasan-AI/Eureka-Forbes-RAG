@@ -140,6 +140,23 @@ Hallucination Rate = (questions WRONGLY answered instead of refused) / (total un
 
 The system reliably retrieves relevant content (100% recall) and reliably refuses questions about **unsupported years**. However, evaluation revealed a genuine gap: questions referencing a **valid year** but an **unsupported topic or business segment** (e.g., "electric cars," a product Eureka Forbes does not sell) are not caught by the safety gates at all, since those gates only validate years — not topics. In these cases, retrieval still returns semantically "close enough" chunks (same company, same fiscal year), and the LLM, relying solely on its prompt instructions with no rule-based backup, generated confident, specific, incorrect answers rather than refusing.
 
+## Screenshots
+
+**Correctly grounded answer, with page-level source attribution:**
+A standard answerable question retrieves the right evidence and cites exact source pages.
+
+![Grounded answer example](Screenshot%202026-10-04%20165243.png)
+
+**Hallucination example — unsupported product claim (electric cars):**
+A valid year (FY26) lets the question pass the safety gates unchecked for topic relevance; retrieval returns topically-related but irrelevant chunks, and the LLM invents a specific figure instead of refusing.
+
+![Electric cars hallucination](Screenshot%202026-10-04%20113638.png)
+
+**Hallucination example — unsupported business segment (US operations):**
+Same root cause as above — valid year, unsupported segment, no safety gate catches it.
+
+![US operations hallucination](Screenshot%202026-10-04%20113719.png)
+
 ## Limitations
 
 - Safety gates validate **temporal claims only** (years); they have no mechanism to verify that a question's topic, product, or business segment is actually covered by the retrieved evidence — leading to the hallucination pattern documented above.
