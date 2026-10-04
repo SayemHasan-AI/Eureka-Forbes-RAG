@@ -155,7 +155,7 @@ A valid year (FY26) lets the question pass the safety gates unchecked for topic 
 **Hallucination example — unsupported business segment (US operations):**
 Same root cause as above — valid year, unsupported segment, no safety gate catches it.
 
-![US operations hallucination](Screenshot%202026-10-04%20113719.png)
+![US operations hallucination](https://github.com/SayemHasan-AI/Eureka-Forbes-RAG/blob/main/US%20operations%20Hallucination.png?raw=true)
 
 ## Limitations
 
