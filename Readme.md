@@ -145,7 +145,7 @@ The system reliably retrieves relevant content (100% recall) and reliably refuse
 **Correctly grounded answer, with page-level source attribution:**
 A standard answerable question retrieves the right evidence and cites exact source pages.
 
-![Grounded answer example](Screenshot%202026-10-04%20165243.png)
+![Grounded answer example](FY26 response.png)
 
 **Hallucination example — unsupported product claim (electric cars):**
 A valid year (FY26) lets the question pass the safety gates unchecked for topic relevance; retrieval returns topically-related but irrelevant chunks, and the LLM invents a specific figure instead of refusing.
