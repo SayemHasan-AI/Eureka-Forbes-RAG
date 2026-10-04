@@ -150,7 +150,7 @@ A standard answerable question retrieves the right evidence and cites exact sour
 **Hallucination example — unsupported product claim (electric cars):**
 A valid year (FY26) lets the question pass the safety gates unchecked for topic relevance; retrieval returns topically-related but irrelevant chunks, and the LLM invents a specific figure instead of refusing.
 
-![Electric cars hallucination](Screenshot%202026-10-04%20113638.png)
+![Electric cars hallucination](https://github.com/SayemHasan-AI/Eureka-Forbes-RAG/blob/main/EVs%20hallucination.png?raw=true)
 
 **Hallucination example — unsupported business segment (US operations):**
 Same root cause as above — valid year, unsupported segment, no safety gate catches it.
