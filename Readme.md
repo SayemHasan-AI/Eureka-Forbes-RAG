@@ -23,7 +23,9 @@ Used here for educational/non-commercial purposes as part of an AI capstone proj
 ---
 
 ## System Architecture
-https://github.com/SayemHasan-AI/Eureka-Forbes-RAG/blob/main/Architecture%20of%20RAG.jpg?raw=true
+
+![Pipeline](https://github.com/SayemHasan-AI/Eureka-Forbes-RAG/blob/main/Architecture%20of%20RAG.jpg?raw=true)
+
 ```
 PDF (Annual Report)
       |
